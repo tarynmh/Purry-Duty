@@ -18,6 +18,7 @@ namespace UserModelScriptNS {
         private Sprite pictureBonus;
         public TextMeshProUGUI inputText;
         public TextMeshProUGUI loadedName;
+        //TODO: just one text for name
 
         public UserModelScript() {
 
@@ -68,6 +69,7 @@ namespace UserModelScriptNS {
         // Start is called before the first frame update
         void Start()
         {
+            
             
         }
 
