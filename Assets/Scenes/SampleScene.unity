@@ -659,7 +659,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 0}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -726,8 +726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Enter Name\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
+  m_sharedMaterial: {fileID: -7864746070369738466, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1157,8 +1157,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
+  m_sharedMaterial: {fileID: -7864746070369738466, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   _inkJsonAsset: {fileID: 4900000, guid: d0262582ca073bb42a51eda21d257582, type: 3}
   _textField: {fileID: 1322148181}
   _choiceButtonContainer: {fileID: 347990403}
-  _choiceButtonPrefab: {fileID: 3764492321629867263, guid: b8b21a0d9a606ce4e8ca044f83f5576a, type: 3}
+  _choiceButtonPrefab: {fileID: 1816350267706633674, guid: 1b8f040e048ee9b4cb851b5d45a40351, type: 3}
 --- !u!4 &1466975162
 Transform:
   m_ObjectHideFlags: 0
@@ -1596,7 +1596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.05, y: -7.48}
+  m_AnchoredPosition: {x: -12.05, y: -8.41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709255517
@@ -1621,8 +1621,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
+  m_sharedMaterial: {fileID: -7864746070369738466, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1800,8 +1800,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: That's Me!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
+  m_sharedMaterial: {fileID: -7864746070369738466, guid: 544dc729e0ec84e4c84bd68cc45e7806, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.85534585, b: 0.8789931, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
