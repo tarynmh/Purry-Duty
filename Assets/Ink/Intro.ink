@@ -14,11 +14,12 @@ Purry duty.
 
 == SUCKS ==
 
+# changeMood sad
 Oh well ... I guess duty calls.
 -> END
 
 == OPTIMISTIC ==
-
+#changeMood happy
 Woohoo!!!! Let's go mete out justice baby!!!!
 
 -> END

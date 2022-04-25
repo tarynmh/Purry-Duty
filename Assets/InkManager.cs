@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
 using TMPro;
+using UserModelScriptNS;
 
 
 // **** This script acts as our dialogue controller.
@@ -28,6 +29,10 @@ public class InkManager : MonoBehaviour
     [SerializeField]
     private Button _choiceButtonPrefab;
 
+    private SingleUserModelScript userModel = SingleUserModelScript.userModelInstance;
+
+    private List<string> tags;
+
 
     void Start()
     {
@@ -44,10 +49,10 @@ public class InkManager : MonoBehaviour
     // display lines of our story
     public void DisplayNextLine()
     {
-
         if (_story.canContinue)
         {
             string text = _story.Continue(); // get next line
+            parseTags();
             text = text?.Trim(); // removes white space from text
             _textField.text = text; // display new text
             Debug.Log("continue");
@@ -57,10 +62,12 @@ public class InkManager : MonoBehaviour
         {
             Debug.Log("choices");
             DisplayChoices();
+            parseTags();
         }
         else if (!_story.canContinue)
         {
-            return;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+            // return;
         }
     }
 
@@ -126,4 +133,31 @@ public class InkManager : MonoBehaviour
             }
         }
     }
+
+    public void parseTags()
+    {
+        if(_story.currentTags.Count > 0)
+        {
+            tags = _story.currentTags;
+            Debug.Log("sWITCH CASE");
+
+            foreach(string tag in tags)
+            {
+                Debug.Log("this is in foreach");
+                Debug.Log(tag);
+                string tagType = tag.Split(' ')[0]; // gets the method that we want to perform
+                string tagAction = tag.Split(' ')[1]; // gets specifics of the action we want
+                switch(tagType) 
+                {
+                    case "changeMood":
+                        SingleUserModelScript.userModelInstance.setStatus(tagAction);
+                        Debug.Log("IN CASE");
+                        Debug.Log(SingleUserModelScript.userModelInstance.getStatus());
+                        break;
+
+                }
+            }
+        }
+    }
+
 }

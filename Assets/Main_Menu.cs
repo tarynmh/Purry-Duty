@@ -10,12 +10,13 @@ public class Main_Menu : MonoBehaviour
 
     public void NewGame()
     {
+        PlayerPrefs.DeleteAll();
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 
     public void LoadGame()
     {
-       
+       UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 
     public void Quit()

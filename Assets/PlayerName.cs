@@ -32,7 +32,7 @@ namespace PlayerNameNS {
         void Update()
         {
             // nameOfPlayer = user.getName();
-            nameOfPlayer = PlayerPrefs.GetString("name", "none");
+            nameOfPlayer = PlayerPrefs.GetString("name", " ");
             loadedName.text = nameOfPlayer;
             if(nameSet && canvas)
             {
