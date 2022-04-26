@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using TMPro;
 using UserModelScriptNS;
@@ -13,11 +14,18 @@ using UserModelScriptNS;
 
 public class InkManager : MonoBehaviour
 {
-
     // note: referenced https://klaudiabronowicka.com/blog/2020-12-01-making-a-visual-novel-with-unity-2-5-integration-with-ink/
    [SerializeField]
     private TextAsset
     _inkJsonAsset;
+
+    // 2 different json files will be loaded in depending on the user's mood
+    private TextAsset
+    levelAssetHappy;
+
+    private TextAsset
+    levelAssetSad;
+
     private Story _story;
 
     [SerializeField]
@@ -33,7 +41,6 @@ public class InkManager : MonoBehaviour
 
     private List<string> tags;
 
-
     void Start()
     {
         StartStory();
@@ -42,7 +49,15 @@ public class InkManager : MonoBehaviour
     // used to make the story
     public void StartStory()
     {
-        _story = new Story(_inkJsonAsset.text);
+        if(SingleUserModelScript.userModelInstance.getStatus() == "happy") {
+            _story = new Story(levelAssetHappy.text);
+        }
+        else if(SingleUserModelScript.userModelInstance.getStatus() == "sad") {
+            _story = new Story(levelAssetSad.text);
+        }
+        else {
+            _story = new Story(_inkJsonAsset.text);
+        }
         DisplayNextLine();
     }
 
@@ -66,7 +81,9 @@ public class InkManager : MonoBehaviour
         }
         else if (!_story.canContinue)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+            SingleUserModelScript.userModelInstance.addLevel(); // update level
+            // go to next level
+            UnityEngine.SceneManagement.SceneManager.LoadScene(("Level"+SingleUserModelScript.userModelInstance.getLevel().ToString()), LoadSceneMode.Additive);
             // return;
         }
     }
@@ -154,10 +171,8 @@ public class InkManager : MonoBehaviour
                         Debug.Log("IN CASE");
                         Debug.Log(SingleUserModelScript.userModelInstance.getStatus());
                         break;
-
                 }
             }
         }
     }
-
 }

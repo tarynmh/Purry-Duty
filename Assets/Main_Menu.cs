@@ -17,6 +17,7 @@ public class Main_Menu : MonoBehaviour
     public void LoadGame()
     {
        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        // call memento somehow probably
     }
 
     public void Quit()

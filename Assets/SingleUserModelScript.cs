@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UserStateNS;
 
 namespace UserModelScriptNS {
     [Serializable]
@@ -15,16 +16,19 @@ namespace UserModelScriptNS {
         private double kibble;
         private string status;
         private List<Item> items;
+        private int numCatnip;
         private bool hasHat;
-        public static SingleUserModelScript userModelInstance = new SingleUserModelScript();
-        //TODO: just one text for name
+        private int level;
+        public static SingleUserModelScript userModelInstance = new SingleUserModelScript(); // greeedy instantiation
 
         private SingleUserModelScript() {
             name = "";
             kibble = 0.0;
             status = "Happy";
             items = new List<Item>();
+            numCatnip = 0;
             hasHat = false;
+            level = 0;
         }
 
         // public static SingleUserModelScript getInstance() {
@@ -47,6 +51,26 @@ namespace UserModelScriptNS {
             } 
         }
 
+        public static SingleUserModelScript getInstance() {
+            return userModelInstance;
+        }
+
+        // Memento Functions
+        public UserState getUserState() {
+            // return new UserState(name, kibble, status, numCatnip, hasHat, level);
+            return new UserState(this);
+        }
+        public void restoreState(UserState u) {
+            // restore the state
+            name = u.getName();
+            kibble = u.getKibble();
+            status = u.getStatus();
+            numCatnip = u.getNumCatnip();
+            hasHat = u.getHat();
+            level = u.getLevel();
+        }
+
+        // getters and setters
         public void setName(string n) {
             name = n;
         }
@@ -73,6 +97,14 @@ namespace UserModelScriptNS {
             }
         }
 
+        public void setNumCatnip(int c) {
+            numCatnip = c;
+        }
+
+        public int getNumCatnip() {
+            return numCatnip;
+        }
+
         public void setHat(bool h) {
             this.hasHat = h;
         }
@@ -89,17 +121,16 @@ namespace UserModelScriptNS {
             return this.status;
         }
 
-        // // Start is called before the first frame update
-        // void Start()
-        // {
-            
-            
-        // }
+        public void setLevel(int l) {
+            level = l;
+        }
 
-        // // Update is called once per frame
-        // void Update()
-        // {
-            
-        // }
+        public void addLevel() {
+            level = level + 1;
+        }
+
+        public int getLevel() {
+            return level;
+        }
     }
 }
