@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UserModelScriptNS;
 using TMPro;
 
@@ -68,5 +69,12 @@ public class ShopManagerScript : MonoBehaviour
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = "Quantity: " + shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
 
         }
+    }
+
+    public void NextLevel() {
+        SingleUserModelScript.userModelInstance.addLevel(); // update level
+        // go to next level
+        UnityEngine.SceneManagement.SceneManager.LoadScene(("Level"+SingleUserModelScript.userModelInstance.getLevel().ToString()), LoadSceneMode.Additive);
+        // return;
     }
 }
