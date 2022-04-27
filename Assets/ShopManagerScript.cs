@@ -28,18 +28,17 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 3] = 500; // hat
 
         // Quantity (also update in the user model)
-        shopItems[3, 1] = 1; // catnip
-        shopItems[3, 2] = 1; // tuna
-        shopItems[3, 3] = 1; // hat
+        shopItems[3, 1] = 0; // catnip
+        shopItems[3, 2] = 0; // tuna
+        shopItems[3, 3] = 0; // hat
 
         Debug.Log("Init");
     }
 
     public void Buy()
     { 
-        Debug.Log("Buy");
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        Debug.Log("ID: " + ButtonRef.GetComponent<ButtonInfo>().ItemID);
+        Debug.Log("Buy ID: " + ButtonRef.GetComponent<ButtonInfo>().ItemID);
         if(SingleUserModelScript.userModelInstance.getKibble() >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
             Debug.Log("Can buy");

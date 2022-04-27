@@ -24,7 +24,7 @@ namespace UserModelScriptNS {
 
         private SingleUserModelScript() {
             name = "";
-            kibble = 300.0;
+            kibble = 100.0;
             status = "Happy";
             items = new List<Item>();
             numCatnip = 0;
