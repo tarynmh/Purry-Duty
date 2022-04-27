@@ -17,16 +17,18 @@ namespace UserModelScriptNS {
         private string status;
         private List<Item> items;
         private int numCatnip;
+        private int numTuna;
         private bool hasHat;
         private int level;
         public static SingleUserModelScript userModelInstance = new SingleUserModelScript(); // greeedy instantiation
 
         private SingleUserModelScript() {
             name = "";
-            kibble = 0.0;
+            kibble = 100.0;
             status = "Happy";
             items = new List<Item>();
             numCatnip = 0;
+            numTuna = 0;
             hasHat = false;
             level = 0;
         }
@@ -87,6 +89,19 @@ namespace UserModelScriptNS {
             return kibble;
         }
 
+        public void addKibble(double k) {
+            kibble = kibble + k;
+        }
+
+        public void removeKibble(double k) {
+            if(kibble - k >= 0) {
+                kibble = kibble -k;
+            }
+            else {
+                kibble = 0;
+            }
+        }
+
         public void addItem(Item i) {
             items.Add(i);
         }
@@ -101,8 +116,36 @@ namespace UserModelScriptNS {
             numCatnip = c;
         }
 
+        public void addCatnip() {
+            numCatnip = numCatnip + 1;
+        }
+
+        public void removeCatnip() {
+            if(numCatnip != 0) {
+                numCatnip = numCatnip - 1;
+            }
+        }
+
         public int getNumCatnip() {
             return numCatnip;
+        }
+
+        public void setNumTuna(int t) {
+            numTuna = t;
+        }
+
+        public void addTuna() {
+            numTuna = numTuna + 1;
+        }
+
+        public void removeTuna() {
+            if(numTuna != 0) {
+                numTuna = numTuna - 1;
+            }
+        }
+
+        public int getNumTuna() {
+            return numTuna;
         }
 
         public void setHat(bool h) {
