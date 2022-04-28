@@ -6,7 +6,7 @@ using TMPro;
 using ItemNS;
 
 
-public class ButtonInfo : MonoBehaviour
+public class ShopButtonInfo : MonoBehaviour
 {
     public int ItemID;
     public TextMeshProUGUI PriceTxt;

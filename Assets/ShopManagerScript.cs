@@ -45,12 +45,12 @@ public class ShopManagerScript : MonoBehaviour
     public void Buy()
     { 
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        int givenID = ButtonRef.GetComponent<ButtonInfo>().ItemID;
+        int givenID = ButtonRef.GetComponent<ShopButtonInfo>().ItemID;
         Debug.Log("Buy ID: " + givenID);
         if(SingleUserModelScript.userModelInstance.getKibble() >= shopItems[givenID].getPrice())
         {
             Debug.Log("Can buy");
-            if(ButtonRef.GetComponent<ButtonInfo>().ItemID == 3) { // if hat -- can only buy 1 hat
+            if(ButtonRef.GetComponent<ShopButtonInfo>().ItemID == 3) { // if hat -- can only buy 1 hat
                 if(shopItems[3].getQuantity() != 0) { // if already have hat
                     Debug.Log("Already have hat");
                     Debug.Log("User Hat: " + SingleUserModelScript.userModelInstance.getHat());
@@ -62,34 +62,34 @@ public class ShopManagerScript : MonoBehaviour
                     shopItems[3].addQuantity(); 
                     // update description, explains why cant buy a hat again
                     shopItems[3].setDescription("Purchased! Looking snazzy for the next day at court!");
-                    ButtonRef.GetComponent<ButtonInfo>().DescTxt.text = shopItems[givenID].getDescription();
+                    ButtonRef.GetComponent<ShopButtonInfo>().DescTxt.text = shopItems[givenID].getDescription();
                 }
             }
             else { // if food
                 SingleUserModelScript.userModelInstance.removeKibble(shopItems[givenID].getPrice());
                 shopItems[givenID].addQuantity(); // update quantity in shop manager and usermodel:
                 
-                if(ButtonRef.GetComponent<ButtonInfo>().ItemID == 1) { // if catnip
+                if(ButtonRef.GetComponent<ShopButtonInfo>().ItemID == 1) { // if catnip
                     SingleUserModelScript.userModelInstance.addCatnip();
                 }
-                else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 2) { // if tuna
+                else if (ButtonRef.GetComponent<ShopButtonInfo>().ItemID == 2) { // if tuna
                     SingleUserModelScript.userModelInstance.addTuna();
                 }
             }
 
             kibbleTXT.text = "Kibble: " + SingleUserModelScript.userModelInstance.getKibble().ToString();
-            ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = "Quantity: " + shopItems[givenID].getQuantity().ToString();
+            ButtonRef.GetComponent<ShopButtonInfo>().QuantityTxt.text = "Quantity: " + shopItems[givenID].getQuantity().ToString();
 
         }
 
         // OLD CODE WITH 2D ARRAY ------ JUST IN CASE
 
         // GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        // Debug.Log("Buy ID: " + ButtonRef.GetComponent<ButtonInfo>().ItemID);
-        // if(SingleUserModelScript.userModelInstance.getKibble() >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        // Debug.Log("Buy ID: " + ButtonRef.GetComponent<ShopShopButtonInfo>().ItemID);
+        // if(SingleUserModelScript.userModelInstance.getKibble() >= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
         // {
         //     Debug.Log("Can buy");
-        //     if(ButtonRef.GetComponent<ButtonInfo>().ItemID == 3) { // if hat -- can only buy 1 hat
+        //     if(ButtonRef.GetComponent<ShopShopButtonInfo>().ItemID == 3) { // if hat -- can only buy 1 hat
         //         if(shopItems[3,3] != 0) { // if already have hat
         //             Debug.Log("Already have hat");
         //             Debug.Log("User Hat: " + SingleUserModelScript.userModelInstance.getHat());
@@ -97,24 +97,24 @@ public class ShopManagerScript : MonoBehaviour
         //         else {
         //             Debug.Log("Bought hat");
         //             SingleUserModelScript.userModelInstance.setHat(true);
-        //             SingleUserModelScript.userModelInstance.removeKibble(shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID]);
-        //             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++; // update quantity in shop manager and usermodel:
+        //             SingleUserModelScript.userModelInstance.removeKibble(shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]);
+        //             shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]++; // update quantity in shop manager and usermodel:
         //         }
         //     }
         //     else { // if food
-        //         SingleUserModelScript.userModelInstance.removeKibble(shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID]);
-        //         shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++; // update quantity in shop manager and usermodel:
+        //         SingleUserModelScript.userModelInstance.removeKibble(shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]);
+        //         shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]++; // update quantity in shop manager and usermodel:
                 
-        //         if(ButtonRef.GetComponent<ButtonInfo>().ItemID == 1) { // if catnip
+        //         if(ButtonRef.GetComponent<ShopButtonInfo>().ItemID == 1) { // if catnip
         //             SingleUserModelScript.userModelInstance.addCatnip();
         //         }
-        //         else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 2) { // if tuna
+        //         else if (ButtonRef.GetComponent<ShopButtonInfo>().ItemID == 2) { // if tuna
         //             SingleUserModelScript.userModelInstance.addTuna();
         //         }
         //     }
 
         //     kibbleTXT.text = "Kibble: " + SingleUserModelScript.userModelInstance.getKibble().ToString();
-        //     ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = "Quantity: " + shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+        //     ButtonRef.GetComponent<ShopButtonInfo>().QuantityTxt.text = "Quantity: " + shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID].ToString();
 
         // }
     }
