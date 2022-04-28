@@ -426,6 +426,7 @@ MonoBehaviour:
   ItemID: 3
   PriceTxt: {fileID: 1997572882}
   QuantityTxt: {fileID: 1370407781}
+  DescTxt: {fileID: 1817256889}
   ShopManager: {fileID: 1901028827}
 --- !u!114 &314131169
 MonoBehaviour:
@@ -1060,6 +1061,7 @@ MonoBehaviour:
   ItemID: 2
   PriceTxt: {fileID: 407692009}
   QuantityTxt: {fileID: 1077667726}
+  DescTxt: {fileID: 336781007}
   ShopManager: {fileID: 1901028827}
 --- !u!114 &439006104
 MonoBehaviour:
@@ -1308,6 +1310,7 @@ MonoBehaviour:
   ItemID: 1
   PriceTxt: {fileID: 1179440951}
   QuantityTxt: {fileID: 1613140952}
+  DescTxt: {fileID: 738934063}
   ShopManager: {fileID: 1901028827}
 --- !u!1 &738934061
 GameObject:
@@ -3349,6 +3352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16385f8d8641fee49a334c1fc1e13b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   kibbleTXT: {fileID: 1285790450}
   kibble: 0
 --- !u!4 &1901028829

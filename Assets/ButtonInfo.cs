@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using ItemNS;
 
 
 public class ButtonInfo : MonoBehaviour
@@ -15,13 +16,10 @@ public class ButtonInfo : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Start " + ItemID + " - " + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID]);
-        // Debug.Log("Start " + ItemID + " - " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getPrice());
+        Debug.Log("Start " + ItemID + " - " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getPrice());
 
-        PriceTxt.text = "Price: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
-        QuantityTxt.text = "Quantity: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
-        // PriceTxt.text = "Price: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getPrice().ToString();
-        // QuantityTxt.text = "Quantity: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getQuantity().ToString();
-        // DescTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getDescription();
+        PriceTxt.text = "Price: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getPrice().ToString();
+        QuantityTxt.text = "Quantity: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getQuantity().ToString();
+        DescTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[ItemID].getDescription();
     }
 }
