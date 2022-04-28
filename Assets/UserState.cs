@@ -12,6 +12,7 @@ namespace UserStateNS {
         private double kibble;
         private string status;
         private int numCatnip;
+        private int numTuna;
         private bool hasHat;
         // need to keep track of level
         private int level;
@@ -21,6 +22,7 @@ namespace UserStateNS {
             kibble = user.getKibble();
             status = user.getStatus();
             numCatnip = user.getNumCatnip();
+            numTuna = user.getNumTuna();
             hasHat = user.getHat();
             level = user.getLevel();
         }
@@ -39,6 +41,10 @@ namespace UserStateNS {
 
         public int getNumCatnip() {
             return numCatnip;
+        }
+
+        public int getNumTuna() {
+            return numTuna;
         }
 
         public bool getHat() {

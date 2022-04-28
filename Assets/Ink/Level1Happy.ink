@@ -106,7 +106,7 @@ Matches: Before I even knew what hit me—or rather, what bit me—this cat flew
 
 Matches: My precious ear! There's a notch in it now, how dreadful ...
 
-Matches: Even though I was beside myself, I still managed to see who it was, clear as day. A tabby cat with amber eyes. 
+Matches: Even though I was beside myself, I still managed to see who it was, clear as day. A tabby cat with green eyes. 
 
 Matches: I'm not naming names, your Honor, BUUUUT ... there is conveniently someone in the neighborhood who matches that exact description, and they're standing in the courtroom right meow!
 
@@ -126,7 +126,7 @@ Tiger: Well, I have an alibi.
 Judge: Oh? Do tell, meow.
 
 #catChange tiger
-Tiger: Matches says that she saw me, a tabby cat with orange eyes, at the scene. Yes, I live in the neighborhood, but she's missing something else.
+Tiger: Matches says that she saw me, a tabby cat with green eyes, at the scene. Yes, I live in the neighborhood, but she's missing something else.
 
 Tiger: My owners have a camera right outside our door. I was able to obtain the footage from that day.
 
@@ -137,7 +137,7 @@ I see Matches shoot Tiger a menacing look, but she surprisingly stays silent.
 
 And there I see it, up on the display screen. Timestamp: 5:58 PM.
 
-It really was Tiger— same tabby markings, same golden eyes, sunbathing on the lawn.
+It really was Tiger— same tabby markings, same green eyes, sunbathing on the lawn.
 
 I wasn't inclined to believe Tiger at first, but this seems convincing to me... How can you be two places at once?
 
@@ -158,14 +158,16 @@ Judge: Oh right. Continue, meow.
 Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was no where NEAR the scene.
 
 #catChange judge
-Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with amber eyes.
+Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with green eyes.
 
 Judge: They took him in for questioning, and the report shows that the cat claimed to have been sunbathing in the area around that time.
 
 Judge: That cat could very well have been in front of your house, Tiger, and in this video footage.
 
 #catChange none
-The monitor switched to a photo of the cat next to a photo of Tiger. He really was a spitting image of the defendant. If I didn't know any better, I would have thought they were twins!
+The monitor switched to a photo of the cat next to a photo of Tiger. He really was a spitting image of the defendant. 
+
+If I didn't know any better, I would have thought they were twins!
 
 This definitely changed things, though. What if the other cat really was just outside Tiger's house? He could've seen it as a perfect set-up...
 

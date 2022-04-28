@@ -72,6 +72,15 @@ namespace UserModelScriptNS {
             level = u.getLevel();
         }
 
+        // public void savePlayerData() {
+        //     SaveSystem.SavePlayer(this.getUserState());
+        // }
+
+        // public void loadPlayerData() {
+        //     UserState saved = SaveSystem.LoadPlayer();
+        //     this.restoreState(saved);
+        // }
+
         // getters and setters
         public void setName(string n) {
             name = n;

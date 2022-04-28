@@ -36,6 +36,18 @@ public class InkManagerLvl : MonoBehaviour
     [SerializeField]
     private Button _choiceButtonPrefab;
 
+    [SerializeField]
+    private SpriteRenderer catRenderer;
+
+    [SerializeField]
+    private SpriteRenderer bgRenderer;
+
+    [SerializeField]
+    private Sprite[] cats;  // different cat images
+
+    [SerializeField]
+    private Sprite[] backgrounds; // different background images
+
     private SingleUserModelScript userModel = SingleUserModelScript.userModelInstance;
 
     private List<string> tags;
@@ -168,7 +180,29 @@ public class InkManagerLvl : MonoBehaviour
                         Debug.Log("IN CASE");
                         Debug.Log(SingleUserModelScript.userModelInstance.getStatus());
                         break;
+
+                    case "bgChange":
+                        if(tagAction == "court") {
+                            bgRenderer.sprite = backgrounds[0]; // change to court
+                        }
+                        else if (tagAction == "outside") {
+                            bgRenderer.sprite = backgrounds[1];
+                        }
+                        break;
+                    case "catChange":
+                        if(tagAction == "judge") {
+                            catRenderer.sprite = cats[0]; // change to judge
+                        }
+                        else if(tagAction == "matches") {
+                            catRenderer.sprite = cats[1]; // change to matches
+                        }
+                        else if (tagAction == "tiger") {
+                            catRenderer.sprite = cats[0]; // change to judge
+                        }
+                        break;
+
                 }
+
             }
         }
     }

@@ -151,7 +151,7 @@ I see Matches shoot Tiger a menacing look, but she surprisingly stays silent.
 
 And there I see it, up on the display screen. Timestamp: 5:58 PM.
 
-It really was Tiger— tabby markings, golden eyes, sunbathing on the lawn.
+It really was Tiger— tabby markings, green eyes, sunbathing on the lawn.
 
 I wasn't inclined to believe Tiger at first, but this seems convincing to me... How can you be two places at once?
 
@@ -169,10 +169,10 @@ Tiger: Your Honor, I'm a cat.
 Judge: Oh right. Continue, meow.
 
 #catChange tiger
-Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was no where NEAR the scene.
+Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was nowhere NEAR the scene.
 
 #catChange judge
-Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with amber eyes.
+Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with green eyes.
 
 Judge: They took him in for questioning, and the report shows that the cat claimed to have been sunbathing in the area around that time.
 
