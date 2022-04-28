@@ -222,9 +222,11 @@ Judge: Is the defendant innocent or guilty?
 
 * [Innocent] -> INNOCENT
 
-* [I Don't] -> GUILTY
+* [Guilty] -> GUILTY
 
 == GUILTY ==
+#addKibble 50
+[ You received 50 kibble ! ]
 
 I know Tiger said that the video footage was him, but it definitely could have been the other neighborhood cat. Almost certainly, in fact.
 
@@ -255,6 +257,9 @@ I take my leave home that day, satisfied with my decision.
 -> END
 
 == RIGHT ==
+#addKibble 50
+[ You received 50 extra kibble ! ]
+
 Yeah, that's definitely it. 
 
 The fur at the crime scene is the most concrete evidence for sure.
