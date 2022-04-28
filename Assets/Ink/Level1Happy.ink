@@ -1,6 +1,8 @@
 -> LEVEL1
 
 == LEVEL1 ==
+#bgChange outside
+#catChange none
 
 I arrived at the Whiskerton County Court at 8 AM sharp.
 
@@ -18,7 +20,7 @@ In just a few minutes, the trial will begin.
 
 ...
 
-#catChange bailiff
+#catChange none
 
 Bailiff: All rise. Department One of the Whiskerton Court is now in session. Judge Tubbs presiding.
 
@@ -26,17 +28,19 @@ Bailiff: All rise. Department One of the Whiskerton Court is now in session. Jud
 
 Judge: Good morning, ladies and gentlecats. Calling the case of Tiger versus Matches. Are both parties prepared for the trial?
 
-#catChange prosecutor
+#catChange matches
 
-Prosecutor: Yes, your honor.
+Matches: Yes, your honor.
 
-#catChange defendant
+#catChange tiger
 
-Defendant: Yes, your honor.
+Tiger: Yes, your honor.
 
 #catChange judge
 
 Judge: Cats of the jury, do you each swear that you will fairly try the case before this court and return a true verdict?
+
+#catChange none
 
 * [I Do] -> CONTINUE
 
@@ -106,9 +110,11 @@ Matches: Before I even knew what hit me—or rather, what bit me—this cat flew
 
 Matches: My precious ear! There's a notch in it now, how dreadful ...
 
-Matches: Even though I was beside myself, I still managed to see who it was, clear as day. A tabby cat with green eyes. 
+Matches: Even though I was beside myself, I still managed to see who it was, clear as day. A tabby cat with amber eyes. 
 
-Matches: I'm not naming names, your Honor, BUUUUT ... there is conveniently someone in the neighborhood who matches that exact description, and they're standing in the courtroom right meow!
+Matches: I'm not naming names, your Honor, BUUUUT ... 
+
+Matches: There is conveniently someone in the neighborhood who matches that exact description, and they're standing in the courtroom right meow!
 
 #catChange judge
 Judge: Now, now, Matches, please hold your comments on the defendant.
@@ -126,7 +132,7 @@ Tiger: Well, I have an alibi.
 Judge: Oh? Do tell, meow.
 
 #catChange tiger
-Tiger: Matches says that she saw me, a tabby cat with green eyes, at the scene. Yes, I live in the neighborhood, but she's missing something else.
+Tiger: Matches says that she saw me, a tabby cat with amber eyes, at the scene. Yes, I live in the neighborhood, but she's missing something else.
 
 Tiger: My owners have a camera right outside our door. I was able to obtain the footage from that day.
 
@@ -137,7 +143,7 @@ I see Matches shoot Tiger a menacing look, but she surprisingly stays silent.
 
 And there I see it, up on the display screen. Timestamp: 5:58 PM.
 
-It really was Tiger— same tabby markings, same green eyes, sunbathing on the lawn.
+It really was Tiger— same tabby markings, same golden eyes, sunbathing on the lawn.
 
 I wasn't inclined to believe Tiger at first, but this seems convincing to me... How can you be two places at once?
 
@@ -158,7 +164,7 @@ Judge: Oh right. Continue, meow.
 Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was no where NEAR the scene.
 
 #catChange judge
-Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with green eyes.
+Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with amber eyes.
 
 Judge: They took him in for questioning, and the report shows that the cat claimed to have been sunbathing in the area around that time.
 

@@ -15,17 +15,19 @@ public static class SaveSystem
 
         formatter.Serialize(stream, user);
         stream.Close();
+        Debug.Log("Game Saved.");
     }
 
     public static UserState LoadPlayer()
     {
-        string path = Application.persistentDataPath + "user.data";
+        string path = Application.persistentDataPath + "/user.data";
         if(File.Exists(path)) {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
             UserState user = formatter.Deserialize(stream) as UserState;
             stream.Close();
+            Debug.Log("Game loaded.");
 
             return user;
         } 

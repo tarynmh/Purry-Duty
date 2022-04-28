@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using TMPro;
 using UserStateNS;
 
+
 namespace UserModelScriptNS {
     [Serializable]
     public class SingleUserModelScript : MonoBehaviour
@@ -72,14 +73,14 @@ namespace UserModelScriptNS {
             level = u.getLevel();
         }
 
-        // public void savePlayerData() {
-        //     SaveSystem.SavePlayer(this.getUserState());
-        // }
+        public void savePlayerData() {
+            SaveSystem.SavePlayer(this.getUserState());
+        }
 
-        // public void loadPlayerData() {
-        //     UserState saved = SaveSystem.LoadPlayer();
-        //     this.restoreState(saved);
-        // }
+        public void loadPlayerData() {
+            UserState saved = SaveSystem.LoadPlayer();
+            this.restoreState(saved);
+        }
 
         // getters and setters
         public void setName(string n) {

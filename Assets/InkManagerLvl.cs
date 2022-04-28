@@ -183,21 +183,54 @@ public class InkManagerLvl : MonoBehaviour
 
                     case "bgChange":
                         if(tagAction == "court") {
+                            // set the scaling
+                            Vector3 pos = new Vector3(-5f, -4f, -2184f);
+                            catRenderer.transform.position = pos;
+                            // set the scaling
+                            Vector3 scale = new Vector3(34.55f, 28.245f, 18.72f);
+                            catRenderer.transform.localScale = scale;
                             bgRenderer.sprite = backgrounds[0]; // change to court
                         }
                         else if (tagAction == "outside") {
+                            // set the scaling
+                            Vector3 pos = new Vector3(-81.4488f, 0.42f, 0f);
+                            catRenderer.transform.position = pos;
+                            // set the scaling
+                            Vector3 scale = new Vector3(0.7559f, 0.90615f);
+                            catRenderer.transform.localScale = scale;
                             bgRenderer.sprite = backgrounds[1];
                         }
                         break;
                     case "catChange":
                         if(tagAction == "judge") {
+                            // set the scaling
+                            Vector3 pos = new Vector3(-80.71f, 0.06f, 0f);
+                            catRenderer.transform.position = pos;
+                            // set the scaling
+                            Vector3 scale = new Vector3(0.8979f, 0.90615f);
+                            catRenderer.transform.localScale = scale;
                             catRenderer.sprite = cats[0]; // change to judge
                         }
                         else if(tagAction == "matches") {
+                            // set the scaling
+                            Vector3 pos = new Vector3(-80.46f, 0.82f, 0f);
+                            catRenderer.transform.position = pos;
+                            // set the scaling
+                            Vector3 scale = new Vector3(0.71f, 0.72f);
+                            catRenderer.transform.localScale = scale;
                             catRenderer.sprite = cats[1]; // change to matches
                         }
                         else if (tagAction == "tiger") {
-                            catRenderer.sprite = cats[0]; // change to judge
+                            // set the scaling
+                            Vector3 pos = new Vector3(-81.45f, 0.42f,0f );
+                            catRenderer.transform.position = pos;
+                            // set the scaling
+                            Vector3 scale = new Vector3(0.76f, 0.91f);
+                            catRenderer.transform.localScale = scale;
+                            catRenderer.sprite = cats[2]; // change to tiger
+                        }
+                        else if(tagAction == "none"){
+                            catRenderer.sprite = null;
                         }
                         break;
 

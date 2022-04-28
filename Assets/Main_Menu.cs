@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UserModelScriptNS;
 
 public class Main_Menu : MonoBehaviour
 {
@@ -16,12 +17,17 @@ public class Main_Menu : MonoBehaviour
 
     public void LoadGame()
     {
-       UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+       //UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
         // call memento somehow probably
+        Debug.Log("Loading Game...");
+        SingleUserModelScript.userModelInstance.loadPlayerData();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level"+ SingleUserModelScript.userModelInstance.getLevel().ToString());
     }
 
     public void Quit()
     {
         Application.Quit();
     }
+
+
 }

@@ -1,6 +1,8 @@
 -> LEVEL1
 
 == LEVEL1 ==
+#bgChange outside
+#catChange none
 
 I arrived at the Whiskerton County Court at 8 AM sharp.
 
@@ -18,7 +20,7 @@ In just a few minutes, the trial will begin.
 
 ...
 
-#catChange bailiff
+#catChange none
 
 Bailiff: All rise. Department One of the Whiskerton Court is now in session. Judge Tubbs presiding.
 
@@ -26,17 +28,19 @@ Bailiff: All rise. Department One of the Whiskerton Court is now in session. Jud
 
 Judge: Good morning, ladies and gentlecats. Calling the case of Tiger versus Matches. Are both parties prepared for the trial?
 
-#catChange prosecutor
+#catChange matches
 
-Prosecutor: Yes, your honor.
+Matches: Yes, your honor.
 
-#catChange defendant
+#catChange tiger
 
-Defendant: Yes, your honor.
+Tiger: Yes, your honor.
 
 #catChange judge
 
 Judge: Cats of the jury, do you each swear that you will fairly try the case before this court and return a true verdict?
+
+#catChange none
 
 * [I Do] -> CONTINUE
 
@@ -122,7 +126,9 @@ I really need to focus!
 
 #catChange none
 
-Matches: I'm not naming names, your Honor, BUUUUT ... there is conveniently someone in the neighborhood who matches that exact description, and they're standing in the courtroom right meow!
+Matches: I'm not naming names, your Honor, BUUUUT ... 
+
+Matches: There is conveniently someone in the neighborhood who matches that exact description, and they're standing in the courtroom right meow!
 
 #catChange judge
 Judge: Now, now, Matches, please hold your comments on the defendant.
@@ -151,7 +157,7 @@ I see Matches shoot Tiger a menacing look, but she surprisingly stays silent.
 
 And there I see it, up on the display screen. Timestamp: 5:58 PM.
 
-It really was Tiger— tabby markings, green eyes, sunbathing on the lawn.
+It really was Tiger— tabby markings, golden eyes, sunbathing on the lawn.
 
 I wasn't inclined to believe Tiger at first, but this seems convincing to me... How can you be two places at once?
 
@@ -172,7 +178,7 @@ Judge: Oh right. Continue, meow.
 Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was nowhere NEAR the scene.
 
 #catChange judge
-Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with green eyes.
+Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with amber eyes.
 
 Judge: They took him in for questioning, and the report shows that the cat claimed to have been sunbathing in the area around that time.
 
