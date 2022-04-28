@@ -6,17 +6,19 @@ namespace ItemNS {
     public class Item : MonoBehaviour
     {
         private string name; 
-        private string effect;
+        private int itemID;
         private double price; 
         private string description; 
-        private Sprite itemImage; // idk if image is the best decision but
+        private int quantity;
+        // private Sprite itemImage; // idk if image is the best decision but
 
 
-        public Item(string n, string e, double p, string d) {
+        public Item(string n, int i, double p, string d, int q) {
             this.name = n;
-            this.effect = e;
+            this.itemID = i;
             this.price = p;
             this.description = d;
+            this.quantity = q;
         }
 
         public void setName(string n) {
@@ -27,12 +29,12 @@ namespace ItemNS {
             return name;
         }
 
-        public void setEffect(string e) {
-            effect = e;
+        public void setID(int i) {
+            itemID = i;
         }
 
-        public string getEffect() {
-            return effect;
+        public int getID() {
+            return itemID;
         }
 
         public void setPrice(double p) {
@@ -50,11 +52,16 @@ namespace ItemNS {
             return description;
         }
 
-        public void setImage(Sprite i) {
-            itemImage = i;
+        public int getQuantity() {
+            return quantity;
         }
-        public Sprite getImage() {
-            return itemImage;
+
+        public void setQuantity(int q) {
+            quantity = q;
+        }
+
+        public void addQuantity() {
+            quantity = quantity + 1;
         }
 
         // Start is called before the first frame update

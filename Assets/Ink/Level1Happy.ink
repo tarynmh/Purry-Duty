@@ -6,7 +6,7 @@ I arrived at the Whiskerton County Court at 8 AM sharp.
 
 Today was the day.
 
-I better head in to get myself checked in and ready to go,
+I better head in to get myself checked in and ready to go.
 
 # bgChange court
 

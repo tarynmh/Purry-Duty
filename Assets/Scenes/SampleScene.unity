@@ -1612,6 +1612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inkJsonAsset: {fileID: 4900000, guid: d0262582ca073bb42a51eda21d257582, type: 3}
+  levelAssetHappy: {fileID: 4900000, guid: 686ef2d28ec2fb1449366dec86f4bd6b, type: 3}
+  levelAssetSad: {fileID: 4900000, guid: fb92f8cc76dde194da96268b9ea5f30e, type: 3}
   _textField: {fileID: 1228197196}
   _choiceButtonContainer: {fileID: 347990403}
   _choiceButtonPrefab: {fileID: 4040670416791594275, guid: 98bad00e393a7b64aa5f961310c7a455, type: 3}

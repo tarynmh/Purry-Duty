@@ -12,12 +12,9 @@ using UserModelScriptNS;
 // **** This script acts as our dialogue controller.
 // * It takes input (JSON and text fields), and displays the story to the view/scene
 
-public class InkManager : MonoBehaviour
+public class InkManagerLvl : MonoBehaviour
 {
     // note: referenced https://klaudiabronowicka.com/blog/2020-12-01-making-a-visual-novel-with-unity-2-5-integration-with-ink/
-   [SerializeField]
-    private TextAsset
-    _inkJsonAsset;
 
     // 2 different json files will be loaded in depending on the user's mood
     [SerializeField]
@@ -51,7 +48,12 @@ public class InkManager : MonoBehaviour
     // used to make the story
     public void StartStory()
     {
-        _story = new Story(_inkJsonAsset.text);
+        if(SingleUserModelScript.userModelInstance.getStatus() == "happy") {
+            _story = new Story(levelAssetHappy.text);
+        }
+        else {
+            _story = new Story(levelAssetSad.text);
+        }
         DisplayNextLine();
     }
 
@@ -78,9 +80,8 @@ public class InkManager : MonoBehaviour
         {
             Debug.Log("cant continue for some reason");
             Debug.Log("Level" + SingleUserModelScript.userModelInstance.getLevel().ToString());
-            SingleUserModelScript.userModelInstance.addLevel();
             // UnityEngine.SceneManagement.SceneManager.LoadScene(("Level"+SingleUserModelScript.userModelInstance.getLevel().ToString()), LoadSceneMode.Additive);
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
         }
     }
 
