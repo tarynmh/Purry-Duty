@@ -14,6 +14,12 @@ Jamie Joung
 [-+-+-+-+-DOWNLOAD-+-+-+-+-](https://drive.google.com/file/d/1VeVmlvyU1XpFyrycOL7MGbtGnaYy5-i9/view?usp=sharing)
 
 
+Components Used:
+* Unity
+* [Ink](https://www.inklestudios.com/ink/)
+* C# (v10)
+
+
 Assets:
 * Room Background: https://i.ytimg.com/vi/910ZDdzb4OY/maxresdefault.jpg
 * Court Background: https://unsplash.com/photos/D2xpdGLlnJw
