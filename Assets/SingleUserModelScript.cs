@@ -41,7 +41,7 @@ namespace UserModelScriptNS {
         //     return userModelInstance;
         // }
 
-        // checks to see if there's an instance of the singleton already -- if there's a duplicate, you need to delete it
+        // checks to see if there's an instance of the Singleton already -- if there's a duplicate, you need to delete it
         private void SingletonCheck() 
         { 
             if (userModelInstance != null && userModelInstance != this) 

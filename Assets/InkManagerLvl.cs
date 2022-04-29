@@ -40,6 +40,8 @@ public class InkManagerLvl : MonoBehaviour
     [SerializeField]
     private BtnFactory btnFactory; // used to make button prefabs
 
+    // renderers are used to change the sprite depending on cat mood, who's talking, etc.
+
     [SerializeField]
     private SpriteRenderer catRenderer;
 
