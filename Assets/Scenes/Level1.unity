@@ -667,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3c6993eebf69d43bf06a7fe101266b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 4040670416791594275, guid: 98bad00e393a7b64aa5f961310c7a455, type: 3}
 --- !u!4 &1380494993
 Transform:
   m_ObjectHideFlags: 0
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   backgrounds:
   - {fileID: 21300000, guid: 6c6d01d806d7ddd46a28fa00de7b24c1, type: 3}
   - {fileID: 21300000, guid: 56278e6dbe6060041a80bcab60a5f79d, type: 3}
+  btnFactory: {fileID: 1380494992}
 --- !u!1 &2075259927
 GameObject:
   m_ObjectHideFlags: 0

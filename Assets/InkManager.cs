@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using TMPro;
 using UserModelScriptNS;
-
+using FactoryNS;
 
 // **** This script acts as our dialogue controller.
 // * It takes input (JSON and text fields), and displays the story to the view/scene
@@ -38,6 +38,9 @@ public class InkManager : MonoBehaviour
 
     [SerializeField]
     private Button _choiceButtonPrefab;
+
+    [SerializeField]
+    private BtnFactory factory;
 
     private SingleUserModelScript userModel = SingleUserModelScript.userModelInstance;
 
@@ -119,7 +122,8 @@ public class InkManager : MonoBehaviour
     {
         Debug.Log("creating button");
         // create button from prefab we made
-        var choiceButton = Instantiate(_choiceButtonPrefab);
+        // var choiceButton = Instantiate(_choiceButtonPrefab);
+        var choiceButton = factory.GetNewInstance();
         choiceButton.transform.SetParent(_choiceButtonContainer.transform, false);
         
         // sets text

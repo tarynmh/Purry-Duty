@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using TMPro;
 using UserModelScriptNS;
+using FactoryNS;
 
 
 // **** This script acts as our dialogue controller.
@@ -37,6 +38,9 @@ public class InkManagerLvl : MonoBehaviour
     private Button _choiceButtonPrefab;
 
     [SerializeField]
+    private BtnFactory btnFactory; // used to make button prefabs
+
+    [SerializeField]
     private SpriteRenderer catRenderer;
 
     [SerializeField]
@@ -57,8 +61,6 @@ public class InkManagerLvl : MonoBehaviour
     private SingleUserModelScript userModel = SingleUserModelScript.userModelInstance;
 
     private List<string> tags;
-
-    private Factory btnFactory; // used to make button prefabs
 
     void Start()
     {
@@ -140,8 +142,8 @@ public class InkManagerLvl : MonoBehaviour
     {
         Debug.Log("creating button");
         // create button from prefab we made
-        var choiceButton = Instantiate(_choiceButtonPrefab);
-        // var choiceButton = btnFactory.GetNewInstance();
+        // var choiceButton = Instantiate(_choiceButtonPrefab);
+        var choiceButton = btnFactory.GetNewInstance();
         choiceButton.transform.SetParent(_choiceButtonContainer.transform, false);
         
         // sets text
