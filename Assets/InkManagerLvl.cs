@@ -43,6 +43,12 @@ public class InkManagerLvl : MonoBehaviour
     private SpriteRenderer bgRenderer;
 
     [SerializeField]
+    private SpriteRenderer userRenderer;
+
+    [SerializeField]
+    private Sprite[] userImgs;
+
+    [SerializeField]
     private Sprite[] cats;  // different cat images
 
     [SerializeField]
@@ -51,6 +57,8 @@ public class InkManagerLvl : MonoBehaviour
     private SingleUserModelScript userModel = SingleUserModelScript.userModelInstance;
 
     private List<string> tags;
+
+    private Factory btnFactory; // used to make button prefabs
 
     void Start()
     {
@@ -133,6 +141,7 @@ public class InkManagerLvl : MonoBehaviour
         Debug.Log("creating button");
         // create button from prefab we made
         var choiceButton = Instantiate(_choiceButtonPrefab);
+        // var choiceButton = btnFactory.GetNewInstance();
         choiceButton.transform.SetParent(_choiceButtonContainer.transform, false);
         
         // sets text
@@ -233,7 +242,17 @@ public class InkManagerLvl : MonoBehaviour
                             catRenderer.sprite = null;
                         }
                         break;
+                    case "addKibble":
+                        double kibbleToAdd = Convert.ToDouble(tagAction);
+                        SingleUserModelScript.userModelInstance.addKibble(kibbleToAdd);
+                        break;
 
+                    case "userChange":
+                        if(tagAction == "sad")
+                        {
+                            userRenderer.sprite = userImgs[0]; // change to sad cat
+                        }
+                        break;
                 }
 
             }

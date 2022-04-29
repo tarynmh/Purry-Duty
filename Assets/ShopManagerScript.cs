@@ -73,7 +73,7 @@ public class ShopManagerScript : MonoBehaviour
 
     public void NextLevel() {
         SingleUserModelScript.userModelInstance.addLevel(); // update level
-        Debug.Log(SingleUserModelScript.userModelInstance.getLevel());
+        Debug.Log("Level: " + SingleUserModelScript.userModelInstance.getLevel());
         // go to next level
         UnityEngine.SceneManagement.SceneManager.LoadScene(("Level"+SingleUserModelScript.userModelInstance.getLevel().ToString()));
         // return;
