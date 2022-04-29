@@ -10,6 +10,8 @@ Jamie Joung
 
 
 *Purry Duty is a visual novel centered around the crimes and mischief of cats. You play as a cat who was summoned for purry duty, and now it's up to you to determine the outcome of the trial!*
+ 
+Press SPACE to continue dialogue, point & click for choices! 
 
 [-+-+-+-+-DOWNLOAD-+-+-+-+-](https://drive.google.com/file/d/1VeVmlvyU1XpFyrycOL7MGbtGnaYy5-i9/view?usp=sharing)
 
