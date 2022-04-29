@@ -13,6 +13,9 @@ Jamie Joung
  
 Press SPACE to continue dialogue, point & click for choices! 
 
+
+Video Demo: https://drive.google.com/file/d/1L0F3IQrCffz0_bIin6gXJE0PGD8UHvYA/view
+
 [-+-+-+-+-DOWNLOAD-+-+-+-+-](https://drive.google.com/file/d/1VeVmlvyU1XpFyrycOL7MGbtGnaYy5-i9/view?usp=sharing)
 
 
