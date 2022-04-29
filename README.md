@@ -18,6 +18,7 @@ Components Used:
 * Unity
 * [Ink](https://www.inklestudios.com/ink/)
 * C# (v10)
+* Visual Studio LiveShare (Worked simultaneously on code)
 
 
 Assets:
