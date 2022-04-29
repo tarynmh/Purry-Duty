@@ -12,7 +12,7 @@ public class Main_Menu : MonoBehaviour
     public void NewGame()
     {
         PlayerPrefs.DeleteAll();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level0");
     }
 
     public void LoadGame()

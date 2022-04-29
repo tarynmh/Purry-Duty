@@ -49,6 +49,7 @@ Judge: Cats of the jury, do you each swear that you will fairly try the case bef
 
 
 == CONTINUE ==
+#catChange judge
 
 Judge: Please be seated. We will now proceed with the trial.
 

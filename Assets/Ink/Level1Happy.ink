@@ -48,6 +48,7 @@ Judge: Cats of the jury, do you each swear that you will fairly try the case bef
 
 
 == CONTINUE ==
+#catChange judge
 
 Judge: Please be seated. We will now proceed with the trial.
 
@@ -161,7 +162,7 @@ Tiger: Your Honor, I'm a cat.
 Judge: Oh right. Continue, meow.
 
 #catChange tiger
-Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was no where NEAR the scene.
+Tiger: I think this piece of evidence is irrefutable, your Honor. I'm sure the jury would agree. Not edited, in front of my house, and clearly me. I was nowhere NEAR the scene.
 
 #catChange judge
 Judge: Wait one second, meow. We received reports from the authorikitties that there is another cat in the neighborhood who is also a tabby cat with amber eyes.
