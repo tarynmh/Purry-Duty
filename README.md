@@ -1,8 +1,11 @@
 # Purry-Duty
 
 **Collaborators**
+
 Rebecca Coryell
+
 Taryn Hovenkamp
+
 Jamie Joung
 
 
