@@ -1,4 +1,5 @@
 # Purry-Duty
+![pd_logosmalll](https://user-images.githubusercontent.com/70242633/217446566-08dcf01f-4a39-4a1b-aeeb-65903b9d3e56.png)
 
 **Collaborators**
 
